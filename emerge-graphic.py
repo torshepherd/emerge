@@ -262,7 +262,7 @@ for trial_index in range(len(trials)):
 	empty_map = list(reference_map)
 
 	#Adding items
-	reference_map[(9 * size[1]) // 10][9 * size[0] // 10] = -2
+	reference_map[size[1] // 2][size[0] // 2] = -2
 
 	#Adding obstacles
 	reference_map[size[1] // 3][size[0] // 3] = -3
