@@ -7,7 +7,9 @@ To begin, open a command prompt and type 'python'. The result should say 'Python
 Next, make sure pip is installed (https://pip.pypa.io/en/stable/installing/).
 
 Next, run the following commands:
+
 pip install pygame
+
 pip install numpy
 
 Should work.
