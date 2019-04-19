@@ -319,5 +319,7 @@ pygame.quit()
 with open(file_name + '.csv', 'w', newline='') as csvfile:
     filewriter = csv.writer(csvfile, delimiter=',',
                             quotechar='|', quoting=csv.QUOTE_MINIMAL)
+    filewriter.writerow(['number of agents n', 'map size m (m tiles x m tiles)', 'solve steps', 'number of interactions'])
+
     for trial in trials:
     	filewriter.writerow(trial)
