@@ -3,7 +3,7 @@ Emergent Behavior Modeling
 
 ![Simulation running](emerge.gif)
 
-As part of the course 'Bio-Inspired Design', my group designed a program to simulate the emergent behavior that arises when ants work collaboratively. The mechanism we implemented was map-sharing.
+As part of the course 'Bio-Inspired Design', my group designed a program to simulate the emergent behavior that arises when ants work collaboratively. The mechanism we implemented was map-sharing; see my website post for explanation.
 
 ## Map Sharing
 As agents navigate a 2d grid, they move almost randomly, trying to expand their knowledge frontier about the map. When two agents are next to one another, their maps synchronize, becoming the union of each of their previous maps.
