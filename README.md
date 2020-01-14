@@ -1,16 +1,18 @@
 # emerge
 Emergent Behavior Modeling
 
-Works on Windows, not tested on anything else.
+As part of the course 'Bio-Inspired Design', my group designed a program to simulate the emergent behavior that arises when ants work collaboratively. The mechanism we implemented was map-sharing.
 
-To begin, open a command prompt and type 'python'. The result should say 'Python 3.x.x'. If not, code may not run. Look up installing Python 3.0.
+## Map Sharing
+As agents navigate a 2d grid, they move almost randomly, trying to expand their knowledge frontier about the map. When two agents are next to one another, their maps synchronize, becoming the union of each of their previous maps.
 
-Next, make sure pip is installed (https://pip.pypa.io/en/stable/installing/).
+The effect is that they can approximately delegate parts of the map for each to search, telling each other that their sector is clear when they happen to bump into each other.
 
-Next, run the following commands:
+## Results
+This project was completed during my undergrad; I had not learned much about dynamic system modeling, ML, or even just smarter search algorithms which could have made the experiment have far better performance.
 
-pip install pygame
+However, the resultant behavior of increasing the number of agents does show that performance increased significantly more when map-sharing was enabled than without.
 
-pip install numpy
-
-Should work.
+## Requirements
+Python 3xx
+Requires numpy, pygame
